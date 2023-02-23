@@ -4,7 +4,8 @@ fun main() {
     val scanner = Scanner(System.`in`)
     val numberToGuess = createRandomNumber()
     var userGuessResult: String
-    println("Enter your guess please..")
+    println("Enter your guess please.." +
+            "Attention The number shall not  contain repeating digits")
     while (true) {
         val userGuess = scanner.nextLine()
         if (checkIfWin(numberToGuess, userGuess)) {
